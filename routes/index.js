@@ -9,4 +9,6 @@ router.get('/', function(req, res, next) {
 
 router.get('/messages', messagesController.getAllMessages);
 
+router.post('/message', messagesController.createNewMessage);
+
 module.exports = router;
